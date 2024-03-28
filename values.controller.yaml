@@ -1,0 +1,5 @@
+---
+#githubConfigUrl: https://github.com/kalenpeterson/github-actions-controller.git
+# controllerServiceAccount:
+#   namespace: arc-controllers
+#   name: actions-runner-controller-gha-rs-controller
