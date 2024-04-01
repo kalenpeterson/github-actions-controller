@@ -1,10 +1,13 @@
 #!/bin/bash
+set -e
 
 INSTALLATION_NAME="arc-runner-set2"
 NAMESPACE="arc-runners2"
 GITHUB_CONFIG_URL="https://github.com/kalenlab"
 GITHUB_PAT=$(cat ./pat.txt)
-kubectl apply secret generic github-token \
+kubectl delete secret github-token \
+   --namespace=$NAMESPACE
+kubectl create secret generic github-token \
    --namespace=$NAMESPACE \
    --from-literal=github_token=$GITHUB_PAT
 
