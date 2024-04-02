@@ -1,2 +1,3 @@
 ---
 #githubConfigUrl: https://github.com/kalenpeterson/github-actions-controller.git
+minRunners: 2
