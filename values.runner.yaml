@@ -1,3 +1,7 @@
 ---
 #githubConfigUrl: https://github.com/kalenpeterson/github-actions-controller.git
 minRunners: 2
+
+# Set to enable dind
+containerMode:
+  type: "dind" ## type can be set to dind or kubernetes
